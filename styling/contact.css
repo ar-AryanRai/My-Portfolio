@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.rest-opt {
+  cursor: pointer;
+}
+
+nav .left .rest-opt:hover {
+  color: #f87171;
+}
