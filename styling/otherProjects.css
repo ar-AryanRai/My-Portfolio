@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  background-color: #eaeaea;
+  opacity: 0;
+}
+
+.current {
+  color: black;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: default;
+}
+
+.rest-opt {
+  cursor: pointer;
+}
+
+.notification {
+  z-index: 200;
+}
+
+nav .left .rest-opt:hover {
+  color: #f87171;
+}
+
+.container {
+  box-shadow: 0 0 10px 0 #af718e;
+  height: 82%;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container div {
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 black;
+}
+
+.container div h3 {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 6px;
+  text-align: center;
+}
+
+.container div:hover h3 {
+  display: block;
+}
+
+@media (max-width: 431px) {
+  nav {
+    opacity: 0;
+  }
+
+  .nav2 {
+    display: flex;
+    z-index: 200;
+  }
+
+  .nav2 .options-list {
+    background-color: #b86374;
+  }
+
+  .topic {
+    left: 26%;
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 30px 0px;
+  }
+
+  .container div {
+    width: 90%;
+    height: 200px;
+    background-position: center;
+  }
+
+  .container .calculator,
+  .container .to-do-app {
+    height: 230px;
+  }
+
+  .container div:active h3 {
+    display: block;
+    scale: 1;
+  }
+}

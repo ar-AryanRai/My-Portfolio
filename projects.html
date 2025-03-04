@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./styling/project.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/33ce17bf2c.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="relative">
+
+  <!--  Navigation bar -->
+  <nav
+    class="absolute lg:top-0 lg:right-0 lg:w-[75%] flex lg:justify-between items-center lg:pl-[100px] lg:pr-[40px] h-[10%]">
+
+    <!-- nav options -->
+    <div class="left flex justify-evenly items-center w-[70%] text-gray-400">
+      <div class="rest-opt home">Home</div>
+      <div class="rest-opt about">About me</div>
+      <div class="logo text-3xl text-red-400 font-semibold">Aryan.R</div>
+      <div class="rest-opt skills">Skills</div>
+      <div class="current projects">Projects</div>
+    </div>
+
+    <!-- hire me button -->
+    <div
+      class="contact right bg-red-400 text-white lg:px-6 lg:py-2 rounded-3xl font-semibold opacity-0 cursor-pointer active:scale-90 duration-500 hover:bg-red-600">
+      Hire me
+    </div>
+  </nav>
+
+  <div
+    class="nav2 lg:hidden absolute top-0 w-[100%] flex justify-between items-center lg:pl-[100px] lg:pr-[40px] h-[10%] px-5">
+
+    <div class="logo text-3xl text-red-400 font-semibold">Aryan.R</div>
+
+    <i class="fa-solid fa-bars fa-xl text-white"></i>
+
+    <div
+      class="options-list hidden absolute right-0 top-0 h-[100vh] w-[50%] bg-[#B8A6BF] flex flex-col pt-[120px] gap-20 items-center text-white">
+      <i class="absolute top-10 right-8 fa-solid fa-xmark fa-xl"></i>
+      <div class="rest-opt home">Home</div>
+      <div class="rest-opt about">About me</div>
+      <div class="rest-opt skills">Skills</div>
+      <div class="current projects">Projects</div>
+      <div
+        class="contact right bg-red-400 text-white px-6 py-2 rounded-3xl font-semibold cursor-pointer active:scale-90 duration-500 hover:bg-red-600">
+        Hire me
+      </div>
+    </div>
+
+  </div>
+
+  <div class="blob absolute"></div>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide flex flex-col">
+        <img class="wizardZ" src="./images/projects/project1.png" alt="Project 1">
+
+        <h1 class="text-black">Animated Website-WizardZ</h1>
+      </div>
+
+      <div class="swiper-slide flex flex-col">
+        <img class="space" src="./images/projects/project2.png" alt="Project 2">
+
+        <h1 class="text-black">Ecommerce - Space Odyssey</h1>
+      </div>
+
+      <div class="swiper-slide flex flex-col">
+        <img class="ems" src="./images/projects/project3.png" alt="Project 3">
+        <h1>Task Management App</h1>
+      </div>
+
+      <div class="swiper-slide flex flex-col">
+        <img class="cart" src="./images/projects/project4.png" alt="Project 4">
+
+        <h1>Working Cart using React</h1>
+      </div>
+
+      <div class="swiper-slide flex flex-col">
+        <img class="sorting" src="./images/projects/project5.png" alt="Project 5">
+
+        <h1>Sorting Visualizer</h1>
+      </div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="btns flex absolute lg:bottom-16 gap-10">
+    <button class="contact-me blob-button  bottom-16">Get connected</button>
+    <button class="other-projects blob-button bottom-16" onclick="() =>{
+      window.location.href = `https://github.com/ar-AryanRai?tab=repositories`;
+    }">More Projects</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="./carousel.js"></script>
+  <script src="./nav.js"></script>
+  <script src="./navAnimation.js"></script>
+  <script src="./projects.js"></script>
+  <script src="./projectsNavigation.js"></script>
+</body>
+
+</html>
