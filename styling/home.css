@@ -104,6 +104,6 @@ nav .left .rest-opt:hover {
   }
 
   .image {
-    opacity: 0;
+    display: none;
   }
 }
