@@ -2,7 +2,7 @@
 
 Welcome to the source code of my personal portfolio website, built to showcase my skills, projects, and professional journey in web development.
 
-🌐 **Live Site**: [aryan-rai-portfolio.netlify.app](https://aryan-rai-portfolio.netlify.app/)
+🌐 **Live Site**: [Click here](https://ar-aryanrai.github.io/My-Portfolio/)
 
 ## 📌 About
 
